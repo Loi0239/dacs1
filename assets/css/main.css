@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+@font-face{
+    font-family: Square;
+    src: url(../fonts/Square.ttf)
+}
+
+body{
+    background-color: azure;
+}
+
+/* Header */
+#header{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: #111222;
+}
+
+#header .wall1{
+    position: relative;
+    top: -106px;
+    left: 182px;
+    height: 40px;
+    width: 1px;
+    background: #fff;
+    box-shadow: 0 0 8px #fff;
+}
+
+#header .wall2{
+    position: relative;
+    top: -194px;
+    left: 535px;
+    height: 40px;
+    width: 1px;
+    background: #fff;
+    box-shadow: 0 0 8px #fff;
+}
+
+#header .wall3{
+    position: relative;
+    top: -281px;
+    left: 941px;
+    height: 40px;
+    width: 1px;
+    background: #fff;
+    box-shadow: 0 0 8px #fff;
+}
+
+#header .wall4{
+    position: relative;
+    top: -322px;
+    left: 1089px;
+    height: 40px;
+    width: 1px;
+    background: #fff;
+    box-shadow: 0 0 8px #fff;
+}
+
+/* Header > logo */
+#header .logo{
+    position: relative;
+    left: -1em;
+    top: -2em;
+    width: 200px;
+    height:110px;
+    box-shadow: #aa0ad6;
+}
+
+#header .logo img{
+    position: absolute;
+    z-index: 111;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Header > search */
+.search-box{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 380px;
+}
+
+.search {
+    position: relative;
+    top: -9.35em;
+    left: 13em;
+    background: #ccc;
+    border-radius: 30px;
+}
+
+.search .input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    width: 0;
+    padding: 0;
+    transition: all 0.25s ease-in-out;
+}
+
+.search:hover .input, .search .input:valid{
+    width: 220px;
+    padding: 10px 15px;
+}
+
+
+
+.search .btn{
+    background-color: #ccc;
+    border: none;
+    outline: none;
+    padding: 15px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Header > nav */
+#header #nav{
+    position: relative;
+    top: -14.8em;
+    left: 48em;
+    height: 46px;
+}
+
+#header #nav li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: square;
+    cursor: pointer;
+}
+
+#header #nav li a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+#header #nav li a::before{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    height: 5px;
+    width: 0px;
+    background-color: none;
+    transition: all 0.5s ease-in-out;
+}
+
+#header #nav li:nth-child(1):hover a::before{
+    width: 100%;
+    background-color: #3272e2;
+}
+
+#header #nav li:nth-child(2):hover a::before{
+    width: 100%;
+    background-color: #50ce80;
+}
+
+#header #nav li:nth-child(3):hover a::before{
+    width: 100%;
+    background-color: #aa0ad6;
+}
+
+#header #nav li:nth-child(1):hover a{
+    color: #3272e2;
+}
+
+#header #nav li:nth-child(2):hover a{
+    color: #50ce80;
+}
+
+#header #nav li:nth-child(3):hover a{
+    color: #aa0ad6;
+}
+
+#header #nav .wall{
+    position: relative;
+    top: -53px;
+    left: 26px;
+}
+
+/* Header > nav > icon */
+#header .house{
+    color: #3272e2;
+    font-size: 25px;
+}
+
+#header .folder{
+    color: #50ce80;
+    font-size: 25px;
+}
+
+#header .user{
+    color: #aa0ad6;
+    font-size: 25px;
+}
