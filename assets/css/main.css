@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 @font-face{
@@ -204,3 +204,107 @@ body{
     color: #aa0ad6;
     font-size: 25px;
 }
+
+/* Container */
+
+
+
+/* footer */
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 50px 0 30px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.footer__row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer__col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.footer__col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+.footer__col-about ,.footer__col-social-mxh {
+    list-style: none;
+    padding: auto;
+    cursor: pointer;
+}
+
+.footer__col-connect{
+    list-style: none;
+    padding: auto;
+}
+
+.footer__col-item {
+    padding-bottom: 10px;
+}
+
+.footer__col-letter {
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+}
+form .fa {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.footer__col-input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fas{
+    font-size: 16px;
+    color: #ccc;
+}
+
+.fa-brands {
+    color: #fff;
+}
+
+.footer__hr {
+    width: 100%;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.footer__p {
+    font-size: 15px;
+}
+
+
