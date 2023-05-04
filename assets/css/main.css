@@ -23,7 +23,7 @@ body{
     top: -106px;
     left: 182px;
     height: 40px;
-    width: 1px;
+    width: 3px;
     background: #fff;
     box-shadow: 0 0 8px #fff;
 }
@@ -33,27 +33,27 @@ body{
     top: -194px;
     left: 535px;
     height: 40px;
-    width: 1px;
+    width: 3px;
     background: #fff;
     box-shadow: 0 0 8px #fff;
 }
 
 #header .wall3{
     position: relative;
-    top: -281px;
+    top: -279px;
     left: 941px;
     height: 40px;
-    width: 1px;
+    width: 3px;
     background: #fff;
     box-shadow: 0 0 8px #fff;
 }
 
 #header .wall4{
     position: relative;
-    top: -322px;
+    top: -319px;
     left: 1089px;
     height: 40px;
-    width: 1px;
+    width: 3px;
     background: #fff;
     box-shadow: 0 0 8px #fff;
 }
@@ -118,7 +118,7 @@ body{
 /* Header > nav */
 #header #nav{
     position: relative;
-    top: -15.2em;
+    top: -15em;
     left: 48em;
     height: 46px;
 }
@@ -224,7 +224,7 @@ body{
     display: block;
     position: relative;
     top: 100px;
-    left: 912px;
+    left: 860px;
     font-size: 15px;
     width: 100px;
     height: 30px;
@@ -377,10 +377,6 @@ body{
     padding: 0 15px 15px;
 }
 
-.hashtag .box-hashtag{
-
-}
-
 .hashtag .box-hashtag .list-hashtag{
     display: flex;
     flex-wrap: wrap;
@@ -432,7 +428,7 @@ body{
 footer{
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -1500px;
     background: linear-gradient(to right, #00093c, #2d0b00);
     color: #fff;
     padding: 50px 0 30px;
@@ -487,13 +483,11 @@ form {
     margin-bottom: 50px;
     padding-bottom: 15px;
 }
-form .fa {
-    font-size: 18px;
-    margin-right: 10px;
-}
 
 .footer__col-input {
     width: 100%;
+    padding-left: 5px;
+    font-weight: 600;
     background: transparent;
     color: #ccc;
     border: 0;
