@@ -102,7 +102,7 @@ body{
 }
 
 .search:hover .input, .search .input:valid{
-    width: 220px;
+    width: 260px;
     padding: 10px 15px;
 }
 
