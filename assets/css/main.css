@@ -68,11 +68,17 @@ body{
     box-shadow: 0 0 8px #fff;
 }
 
+.wrapper-head{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+ 
 /* Header > logo */
 #header .logo{
     position: relative;
-    left: -1em;
-    top: -2em;
+    left: 0;
+    top: 0;
     width: 200px;
     height:110px;
     box-shadow: #aa0ad6;
@@ -95,8 +101,8 @@ body{
 
 .search {
     position: relative;
-    top: -9.35em;
-    left: 13em;
+    top: 0;
+    left: 20px;
     background: #ccc;
     border-radius: 30px;
 }
@@ -127,9 +133,9 @@ body{
 
 /* Header > nav */
 #header #nav{
-    position: relative;
+    /* position: relative;
     top: -15em;
-    left: 40em;
+    left: 40em; */
     height: 46px;
 }
 
@@ -212,12 +218,12 @@ body{
 /* Header > nav > login-btn */
 .login-btn{
     position: relative;
-    top: -359px;
-    left: 1300px;
+    top: 0;
+    left: 190px;
     display: inline-block;
     background-color: none;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border-radius: 20px;
     text-decoration: none;
     font-size: 15px;
@@ -235,7 +241,7 @@ body{
     top: 0;
     right: 0;
     width: 0%;
-    height: 43px;
+    height: 40px;
     background:linear-gradient(-150deg, #FFCC33, #9966FF, #00FFFF);
     border-radius: 20%;
     transition: all 0.5s ease-in-out;
@@ -244,7 +250,6 @@ body{
 
 .login-btn:hover{
     position: relative;
-    left: 1297px;
     font-size: 17px;
     z-index: 0;
 }
@@ -252,7 +257,7 @@ body{
 .login-btn:hover::before,
 .login-btn:hover::after{
     position: absolute;
-    top: 0; 
+    top: -5px; 
     right: 0;
     width: 100%;
 }
@@ -389,6 +394,7 @@ body{
     border: 1.5px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     box-shadow: 0 0 5px #000;
+    z-index: 3;
 }
 
 .box-right .follow h2{
