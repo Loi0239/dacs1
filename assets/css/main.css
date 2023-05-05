@@ -41,7 +41,7 @@ body{
 #header .wall3{
     position: relative;
     top: -279px;
-    left: 941px;
+    left: 809px;
     height: 40px;
     width: 3px;
     background: #fff;
@@ -51,7 +51,17 @@ body{
 #header .wall4{
     position: relative;
     top: -319px;
-    left: 1089px;
+    left: 959px;
+    height: 40px;
+    width: 3px;
+    background: #fff;
+    box-shadow: 0 0 8px #fff;
+}
+
+#header .wall5{
+    position: relative;
+    top: -406px;
+    left: 1200px;
     height: 40px;
     width: 3px;
     background: #fff;
@@ -119,7 +129,7 @@ body{
 #header #nav{
     position: relative;
     top: -15em;
-    left: 48em;
+    left: 40em;
     height: 46px;
 }
 
@@ -198,6 +208,72 @@ body{
     color: #aa0ad6;
     font-size: 25px;
 }
+
+/* Header > nav > login-btn */
+.login-btn{
+    position: relative;
+    top: -359px;
+    left: 1300px;
+    display: inline-block;
+    background-color: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background: none;
+    border: 2px solid #fff;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.login-btn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 43px;
+    background:linear-gradient(-150deg, #FFCC33, #9966FF, #00FFFF);
+    border-radius: 20%;
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.login-btn:hover{
+    position: relative;
+    left: 1297px;
+    font-size: 17px;
+    z-index: 0;
+}
+
+.login-btn:hover::before,
+.login-btn:hover::after{
+    position: absolute;
+    top: 0; 
+    right: 0;
+    width: 100%;
+}
+
+/* @keyframes trasition-background{
+    0%{
+        transform: translate(30px, 30px);
+    }
+    25%{
+        transform: translate(-30px, -30px);
+    }
+    50%{
+        transform: translate(15px, 15px);
+    }
+    75%{
+        transform: translate(-15px, -15px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+} */
 
 /* Main */
 /* Main > box-left */
