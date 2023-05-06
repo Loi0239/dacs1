@@ -14,64 +14,11 @@ body{
     position: fixed;
     height: 50px;
     width: 100%;
-    background-color: #111222;
-    z-index: 1;
-}
-
-#header .wall1{
-    position: relative;
-    top: -106px;
-    left: 182px;
-    height: 40px;
-    width: 3px;
-    background: #fff;
-    box-shadow: 0 0 8px #fff;
-}
-
-#header .wall2{
-    position: relative;
-    top: -194px;
-    left: 535px;
-    height: 40px;
-    width: 3px;
-    background: #fff;
-    box-shadow: 0 0 8px #fff;
-}
-
-#header .wall3{
-    position: relative;
-    top: -279px;
-    left: 809px;
-    height: 40px;
-    width: 3px;
-    background: #fff;
-    box-shadow: 0 0 8px #fff;
-}
-
-#header .wall4{
-    position: relative;
-    top: -319px;
-    left: 959px;
-    height: 40px;
-    width: 3px;
-    background: #fff;
-    box-shadow: 0 0 8px #fff;
-}
-
-#header .wall5{
-    position: relative;
-    top: -406px;
-    left: 1200px;
-    height: 40px;
-    width: 3px;
-    background: #fff;
-    box-shadow: 0 0 8px #fff;
-}
-
-.wrapper-head{
     display: flex;
     align-items: center;
-    height: 50px;
+    justify-content: space-around;
+    background-color: #111222;
+    z-index: 1;
 }
  
 /* Header > logo */
@@ -94,15 +41,12 @@ body{
 /* Header > search */
 .search-box{
     display: flex;
-    justify-content: start;
+    justify-content: end;
     align-items: center;
-    width: 380px;
+    width: 300px;
 }
 
 .search {
-    position: relative;
-    top: 0;
-    left: 20px;
     background: #ccc;
     border-radius: 30px;
 }
@@ -133,9 +77,6 @@ body{
 
 /* Header > nav */
 #header #nav{
-    /* position: relative;
-    top: -15em;
-    left: 40em; */
     height: 46px;
 }
 
@@ -218,8 +159,6 @@ body{
 /* Header > nav > login-btn */
 .login-btn{
     position: relative;
-    top: 0;
-    left: 190px;
     display: inline-block;
     background-color: none;
     border: none;
@@ -250,7 +189,6 @@ body{
 
 .login-btn:hover{
     position: relative;
-    font-size: 17px;
     z-index: 0;
 }
 
