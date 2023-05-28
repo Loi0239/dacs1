@@ -1,0 +1,44 @@
+/* Responsive */
+@media screen and (max-width:1121px) {
+    .search-box{
+        display: none;
+    }
+
+    .box-right{
+        position: relative;
+        top: 2280px;
+        float: none;
+        width: 85%;
+        margin: auto;
+    }
+
+    .box-right .follow{
+        position: relative;
+    }
+
+    .box-right .follow h2{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .box-right .social{
+        display: inline-block;
+    }
+
+    footer{
+        bottom: -2500px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+
+    .warpper-child{
+        width: 96%;
+    }
+}
