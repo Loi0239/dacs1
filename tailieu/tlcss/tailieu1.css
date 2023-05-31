@@ -280,13 +280,14 @@ main{
     line-height: 25px;
 }
 .wrapper__khung1{
-    height: 235px;
+    height: 450px;
     border: 1px solid orangered;
     background-color: #fffbf1;
     width: 100%;
 }
 .wrapper__k1{
     text-align: left;
+    line-height: 40px;
 }
 /* Main > box right */
 .box-right{
@@ -422,7 +423,7 @@ main{
 footer{
     width: 100%;
     position: absolute;
-    bottom: -6700px;
+    bottom: -7000px;
     background: linear-gradient(to right, #00093c, #2d0b00);
     color: #fff;
     padding: 50px 0 30px;
