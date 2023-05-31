@@ -244,44 +244,50 @@ main{
 .wrapper{
     position: relative;
 }
-.hea{
+.wrapper__head{
     padding-top: 20px;
+    padding-bottom: 5px;
     color: black;
     text-align: center;
     width: 100%;
     text-align: left;
 }
-.anh{
+.wrapper__anh{
     width: 100%;
 }
-.text{
+.wrapper__text{
     text-align: left;
+    line-height: 25px;
+    padding-bottom: 10px;
 }
-.khung{
+.wrapper__khung{
     border: 1px solid orangered;
     background-color: #fffbf1;
     padding: 8px;
 }
-.khung-text1{
-    background-color: #e1dada;
-    text-align: left;
-}
-.khung-text2{
+.wrapper__khung-text1{
     background-color: #fdf0f0;
     text-align: left;
 }
-.text-li{
+.wrapper__khung-text2{
+    background-color: #e1dada;
+    text-align: left;
+}
+.wrapper__text-li{
     text-align: left;
     padding: 20px;
     list-style: none;
+    line-height: 25px;
 }
-.khung1{
-    height: 350px;
+.wrapper__khung1{
+    height: 235px;
     border: 1px solid orangered;
     background-color: #fffbf1;
     width: 100%;
 }
-
+.wrapper__k1{
+    text-align: left;
+}
 /* Main > box right */
 .box-right{
     position: relative;
@@ -416,7 +422,7 @@ main{
 footer{
     width: 100%;
     position: absolute;
-    bottom: -1500px;
+    bottom: -6700px;
     background: linear-gradient(to right, #00093c, #2d0b00);
     color: #fff;
     padding: 50px 0 30px;
