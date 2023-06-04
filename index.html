@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog chia sẻ công nghệ</title>
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/ResponsiveMain.css">
+    <!-- <link rel="stylesheet" href="./assets/css/ResponsiveMain.css"> -->
     <link rel="stylesheet" href="./assets/fonts/fontawesome-6.4.0-(icon)/css/all.min.css">
     <link rel="shortcut icon" href="./assets/img/logo-page.png" type="image/x-icon">
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <header id="header">
+            <div class="sidebar"><i class="fa-solid fa-bars"></i></div>
             <div class="logo">
                 <img src="./assets/img/logo.png" alt="logo">
             </div>
-            <nav id="nav">
+            <nav id="nav" class="">
                 <ul class="text">
-                    <li><a href="./index.html"><i class="fa-solid fa-house house"></i> Trang Chủ</a></li>
-                    <li><a href="./document.html"><i class="fa-solid fa-folder-open folder"></i> Tài Liệu</a></li>
-                    <li><a href="./introduce.html"><i class="fa-solid fa-user user"></i> Giới Thiệu</a></li>
+                    <li><a href="./index.html"><i class="icon fa-solid fa-house house"></i> Trang Chủ</a></li>
+                    <li><a href="./document.html"><i class="icon fa-solid fa-folder-open folder"></i> Tài Liệu</a></li>
+                    <li><a href="./introduce.html"><i class="icon fa-solid fa-user user"></i> Giới Thiệu</a></li>
                 </ul>
             </nav>
             <div class="search-box">
@@ -38,7 +39,7 @@
                 <h5 class="title1">Mới nhất >></h5>
                 <a href="#" class="title2">Xem thêm ...</a>
                 <div class="wrapper">
-                    <div class="warpper-child">
+                    <div class="wrapper-child">
                         <div class="img">
                             <img src="./assets/img/html-web.png" alt="">
                         </div>
@@ -61,7 +62,7 @@
                         </div>
                     </div>
 
-                    <div class="warpper-child">
+                    <div class="wrapper-child">
                         <div class="img">
                             <img src="./assets/img/html-web.png" alt="">
                         </div>
@@ -84,7 +85,7 @@
                         </div>
                     </div>
 
-                    <div class="warpper-child">
+                    <div class="wrapper-child">
                         <div class="img">
                             <img src="./assets/img/html-web.png" alt="">
                         </div>
@@ -113,7 +114,7 @@
                 <h5 class="title1">Nổi bật >></h5>
                 <a href="#" class="title2">Xem thêm ...</a>
                 <div class="wrapper">
-                    <div class="warpper-child">
+                    <div class="wrapper-child">
                         <div class="img">
                             <img src="./assets/img/html-web.png" alt="">
                         </div>
@@ -142,7 +143,7 @@
                 <h5 class="title1">Tất cả tài liệu >></h5>
                 <a href="#" class="title2">Xem thêm ...</a>
                 <div class="wrapper">
-                    <div class="warpper-child">
+                    <div class="wrapper-child">
                         <div class="img">
                             <img src="./assets/img/html-web.png" alt="">
                         </div>
@@ -168,29 +169,30 @@
             </section>
         </section>
 
-        <section class="box-right">
+        <div class="box-right">
             <div class="follow">
                 <h2>Theo dõi chúng tôi tại</h2>
-                <a href="https://www.facebook.com/" class="social fb">
-                    <i class="fa-brands fa-facebook icon" 
-                    style="position: relative; top: 0; left: 0"></i> 
-                    Facebook
-                </a>
-                <a href="https://www.youtube.com/" class="social yt">
-                    <i class="fa-brands fa-youtube icon"
-                    style="position: relative; top: 0; left: -3px"></i> 
-                    Youtube
-                </a>
-                <a href="https://www.tiktok.com/" class="social tik">
-                    <i class="fa-brands fa-tiktok icon"
-                    style="position: relative; top: 0; left: -9px"></i> 
-                    Tiktok
-                </a>
-                <a href="https://www.instagram.com/" class="social ins">
-                    <i class="fa-brands fa-instagram icon"
-                    style="position: relative; top: 0; left: 6px"></i> 
-                    Instagram
-                </a>
+                <div class="box-social">
+                    <a href="https://www.facebook.com/" class="social fb">
+                        <i class="fa-brands fa-facebook icon" 
+                        style="position: relative; top: 0; left: 0"></i> 
+                        Facebook
+                    </a>
+                    <a href="https://www.youtube.com/" class="social yt">
+                        <i class="fa-brands fa-youtube icon"
+                        style="position: relative; top: 0; left: -3px"></i> 
+                        Youtube
+                    </a>
+                    <a href="https://www.tiktok.com/" class="social tik">
+                        <i class="fa-brands fa-tiktok icon"
+                        style="position: relative; top: 0; left: -9px"></i> 
+                        Tiktok
+                    </a>
+                    <a href="https://www.instagram.com/" class="social ins">
+                        <i class="fa-brands fa-instagram icon ins-icon"></i> 
+                        Instagram
+                    </a>
+                </div>
             </div>
 
             <div class="hashtag">
@@ -204,7 +206,7 @@
                     </ul>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -253,14 +255,7 @@
             </div>
     </footer>
 
-    <script>
-        // ScrollReveal({
-        //     reset: true,
-        // })
-
-        ScrollReveal().reveal('.warpper-child', {delay: 700, scale: 1.5})
-        ScrollReveal().reveal('.box', {delay: 500, distance: '60px', origin: 'left'})
-    </script>
+    <script src="./assets/script/main.js"></script>
 </div>
 </body>
 </html>

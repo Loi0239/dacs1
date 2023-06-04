@@ -10,20 +10,39 @@
         float: none;
         width: 85%;
         margin: auto;
+        box-shadow: none;
+        background: none;
     }
 
     .box-right .follow{
         position: relative;
+        top: 15px;
+        height: 100px;
+        background-color: white;
     }
 
     .box-right .follow h2{
         position: absolute;
-        top: 0;
+        top: 3px;
+        left: 20px;
+    
+    }
+
+    .box-right .box-social{
+        position: absolute;
         left: 0;
+        top: 30px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
     }
 
     .box-right .social{
-        display: inline-block;
+        padding: 5px 30px;
+    }
+
+    .box-right .hastag{
+        background: white;
     }
 
     footer{
