@@ -289,6 +289,12 @@ main{
     text-align: left;
     line-height: 40px;
 }
+.wrapper__boder{
+    border: 5px;
+    border-style: solid;
+    border-color:  #f0ffff #f0ffff #f0ffff red;
+    padding-left: 35px;
+}
 /* Main > box right */
 .box-right{
     position: relative;
@@ -423,7 +429,7 @@ main{
 footer{
     width: 100%;
     position: absolute;
-    bottom: -7000px;
+    bottom: -5100px;
     background: linear-gradient(to right, #00093c, #2d0b00);
     color: #fff;
     padding: 50px 0 30px;
