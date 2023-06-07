@@ -443,7 +443,7 @@ body{
 footer{
     width: 100%;
     position: absolute;
-    bottom: -1500px;
+    bottom: -1000px;
     background: linear-gradient(to right, #00093c, #2d0b00);
     color: #fff;
     padding: 50px 0 30px;
