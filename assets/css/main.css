@@ -271,24 +271,34 @@ main{
     border-radius: 5px;
 }
 
+.img{
+    width: 100%;
+    height: 40%;
+    margin-bottom: 10px;
+}
+
 .img img{
     width: 90%;
+    height: 90%;
     margin: 5%;
 }
 
 .wrapper-child .title-content{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #e00;
     text-transform: uppercase;
-    text-align: justify;
+    text-align: center;
     font-size: 14px;
     font-weight: 600;
     padding: 0 10px 10px;
     text-decoration: none;
+    min-height: 15%;
 }
 
 .wrapper-child .about-content{
-    padding: 0 10px 10px;
+    padding: 0 10px 30px;
     text-align: justify;
     font-weight: 600;
     opacity: 0.6;
@@ -299,6 +309,8 @@ main{
 }
 
 .wrapper-child .date-time{
+    position: absolute;
+    bottom: -25px;
     display: block;
     padding: 0 10px 10px;
     font-size: 12px;
@@ -447,7 +459,7 @@ main{
 footer{
     width: 100%;
     position: absolute;
-    bottom: -1500px;
+    bottom: -1280px;
     background: linear-gradient(to right, #00093c, #2d0b00);
     color: #fff;
     padding: 50px 0 30px;
@@ -537,6 +549,52 @@ form button .fas{
 
 .footer__p {
     font-size: 15px;
+}
+
+@media (max-width: 1108px){
+    #header .logo{
+        left: 0px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #header #nav li{
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    #header #nav .icon{
+        font-size: 15px;
+    }
+
+    .search-box{
+        width: 195px;
+    }
+
+    .search{
+        height: 30px;
+    }
+
+    .search:hover .input, .search .input:valid{
+        width: 160px;
+        padding: 0 10px;
+        font-size: 11px;
+    }
+
+    .search .btn{
+        padding: 5px 10px;
+    }
+
+    /* main */
+    .wrapper{
+        padding: 10px;
+        grid-template-columns: 50% 50%;
+    }
+
+    /* footer */
+    footer{
+        bottom: -2430px;
+    }
 }
 
 @media (max-width: 740px){
@@ -646,6 +704,7 @@ form button .fas{
     /* box-left */
     .wrapper{
         padding: 10px;
+        grid-template-columns: 50% 50%;
     }
 
     .wrapper .wrapper-child{
@@ -654,9 +713,16 @@ form button .fas{
         margin:0 auto 25px;
     }
 
+    .wrapper-child .title-content{
+        font-size: 12px;
+    }
 
     .wrapper-child .about-content{
         display: none;
+    }
+
+    .wrapper-child .date-time{
+        bottom: 0;
     }
     /* box-right */
     .box-right{
@@ -708,8 +774,12 @@ form button .fas{
   }
   }
   @media(max-width: 574px){
+    .wrapper{
+        grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+    }
+
     footer{
-        bottom: -2260px;
+        bottom: -2740px;;
     }
 
     .footer__col{
