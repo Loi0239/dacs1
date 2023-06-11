@@ -624,6 +624,7 @@ form button .fas{
     #header #nav li{
         width: 100%;
         border-bottom: 2px solid #fff;
+        padding-left: 30px;
     }
 
     #header #nav li a{
