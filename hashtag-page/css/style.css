@@ -51,7 +51,7 @@ body{
     display: flex;
     justify-content: end;
     align-items: center;
-    width: 300px;
+    width: 310px;
 }
 
 .search {
@@ -70,7 +70,7 @@ body{
 }
 
 .search:hover .input, .search .input:valid{
-    width: 260px;
+    width: 230px;
     padding: 10px 15px;
 }
 
@@ -215,17 +215,18 @@ main{
 }
 /* Main > box-left */
 .box-left{
-    margin:125px auto 0;
     width: 80%;
+    margin: auto;
 }
 
 .box{
-    position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 /* Main > box-left > title */
 .title1{
-    position: absolute;
+    position: relative;
+    top: 120px;
+    left: 64px;
     opacity: 0.7;
     width: 140px;
     font-size: 17px;
@@ -233,42 +234,39 @@ main{
 
 .title2{
     display: block;
-    position: absolute;
-    right: 0;
+    position: relative;
+    top: 100px;
+    left: 860px;
     font-size: 15px;
     width: 100px;
     height: 30px;
     color: #aaa;
-    text-align: right;
     text-decoration: none;
     transition: all 0.2s linear;
-}
-
-.title2:hover{
-    color: #005500;
-    font-size: 17px;
 }
 
 /* Main > box-left > wrapper */
 .wrapper{
     position: relative;
-    top: 40px;
-    left: 0px;
+    top: 110px;
+    left: 64px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, auto));
-    background-color: #fff;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    background-color: none;
     width: 100%;
     padding: 20px;
-    box-shadow: 2px 2px 5px #111222;
-    border-radius: 15px;
 }
 
 .wrapper-child{
-    background: linear-gradient(180deg, rgba(100,100,100,0.6), rgba(0,0,0,0));
-    width: 94%;
+    position: relative;
+    background: #fff;
+    width: 90%;
     height: 95%;
-    margin-left: 3%;
-    border-radius: 5px;
+    margin: auto;
+    padding-bottom: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 0 2px #000;
 }
 
 .img{
@@ -282,35 +280,50 @@ main{
     height: 90%;
     margin: 5%;
 }
+.wrapper-child a{
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #e38731;
+}
+
+.wrapper-child a:hover{
+    color: tomato;
+    font-weight: 600;
+}
+
+.wrapper-child .hashtag-title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
 
 .wrapper-child .title-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #e00;
+    display: block;
+    color: #000;
     text-transform: uppercase;
     text-align: center;
     font-size: 14px;
     font-weight: 600;
     padding: 0 10px 10px;
     text-decoration: none;
-    min-height: 15%;
 }
 
 .wrapper-child .about-content{
-    padding: 0 10px 90px;
+    padding: 0 10px 10px;
+    padding-bottom: 68%;
     text-align: justify;
     font-weight: 600;
     opacity: 0.6;
 }
 
 .wrapper-child .title-content:hover{
-    color: #067255;
+    color: #FF3300;
 }
 
 .wrapper-child .date-time{
     position: absolute;
-    bottom: -25px;
+    bottom: -5px;
     display: block;
     padding: 0 10px 10px;
     font-size: 12px;
@@ -328,6 +341,7 @@ main{
     box-shadow: 2px 2px 5px #111222;
     border-radius: 15px;
 }
+
 /* Main > box-right > follow*/
 .box-right .follow{
     margin: 15px;
@@ -372,12 +386,6 @@ main{
 
 .box-right .ins{
     background: linear-gradient(15deg,#ffb13d,#dd277b,#4d5ed4);
-}
-
-.box-right .ins-icon{
-    position: relative;
-    top: 0; 
-    left: 6px;
 }
 
 .box-right .social .icon{
@@ -463,6 +471,7 @@ footer{
     padding: 50px 0 30px;
     font-size: 20px;
     line-height: 20px;
+    margin-top: 15%;
 }
 
 .footer__row {
@@ -579,7 +588,7 @@ form button .fas{
     }
 
     .search:hover .input, .search .input:valid{
-        width: 160px;
+        width: 155px;
         padding: 0 10px;
         font-size: 11px;
     }
@@ -596,7 +605,7 @@ form button .fas{
 
     /* footer */
     footer{
-        bottom: -2430px;
+        margin-top: 19%;
     }
 }
 
@@ -671,23 +680,23 @@ form button .fas{
 
     .search{
         height: 30px;
-        width: 95%;
+        width: 90%;
     }
     
     .search .input{
         font-size: 13px;
-        width: 200px;
-        padding: 10px 15px;
+        width: 165px;
+        padding: 0px 15px;
     }
 
     .search:hover .input, .search .input:valid{
+        width: 165px;
+        padding: 0px 15px;
         font-size: 13px;
-        width: 200px;
-        padding: 10px 15px;
     }
 
     .search .btn{
-        padding: 6px;
+        padding: 3px;
     }
 
     /* header > buttonLogin */
@@ -728,8 +737,7 @@ form button .fas{
     }
 
     .wrapper-child .date-time{
-        padding-bottom: 0px;
-        bottom: -8px;
+        bottom: 0;
     }
     /* box-right */
     .box-right{
@@ -771,15 +779,31 @@ form button .fas{
 
 /*responsive-footer*/
 @media(max-width: 767px){
+    footer{
+       margin-top: 24%;
+    }
+
     .footer__col{
       width: 50%;
       margin-bottom: 30px;
   }
-}
-
-@media(max-width: 574px){
+  }
+  @media(max-width: 574px){
     .wrapper{
-        grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+        grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+    }
+
+    .box-left{
+        width: 70%;
+        margin: auto;
+    }
+
+    .box-right{
+        display: none;
+    }
+
+    footer{
+        margin-top: 28%;
     }
 
     .footer__col{

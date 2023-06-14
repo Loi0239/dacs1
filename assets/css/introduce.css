@@ -208,10 +208,17 @@ body{
     width: 100%;
 }
 
+/* Main */
+main{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-bottom: 10%;
+}
+
 /* Main > box-left */
 .box-left{
     float: left;
-    width: 60%;
+    width: 80%;
     margin-left: 2%;
 }
 
@@ -219,7 +226,6 @@ body{
     margin-bottom: 20px;
 }
 /* Main > box-left > title */
-
 
 /* Main > box-left > wrapper */
 .wrapper{
@@ -235,17 +241,17 @@ body{
     border-radius: 15px;
 }
 
-.warpper__child{
+.wrapper__child{
     width: 100%;
     border-radius: 5px;
     line-height: 30px;
 }
 
-.warpper__child :hover{
+.wrapper__child :hover{
     filter: drop-shadow(0 0 10px #f86c86);
 }
 
-.warpper__child-textX{
+.wrapper__child-textX{
     text-align: center;
     padding: 10px 0px;
     font-size: 25px;
@@ -253,12 +259,12 @@ body{
     margin: 0px 5px;
 }
 
-.warpper__child-text1, .warpper__child-text2, .warpper__child-text3, .warpper__child-text4, .warpper__child-text5, .warpper__child-text6{
+.wrapper__child-text1, .wrapper__child-text2, .wrapper__child-text3, .wrapper__child-text4, .wrapper__child-text5, .wrapper__child-text6{
     padding: 0px 15px;
     font-size: 15px;
     font-family: 'Dancing Script', cursive;
 }
-.warpper__child-text2, .warpper__child-text3, .warpper__child-text4, .warpper__child-text5, .warpper__child-text6{
+.wrapper__child-text2, .wrapper__child-text3, .wrapper__child-text4, .wrapper__child-text5, .wrapper__child-text6{
     padding-top: 10px;
 }
 
@@ -266,10 +272,9 @@ body{
 .box-right{
     position: relative;
     top: 100px;
-    float: left;
-    margin-left: 10%;
+    margin: auto;
     background-color: #fff;
-    width: 20%;
+    width: 60%;
     box-shadow: 2px 2px 5px #111222;
     border-radius: 15px;
 }
@@ -391,13 +396,12 @@ body{
 
 .hashtag .list-hashtag li a:hover::before{
     width: 100%;
+    height: -webkit-fill-available;
     z-index: -1;
 }
 /* footer */
 footer{
     width: 100%;
-    position: absolute;
-    bottom: -450px;
     background: linear-gradient(to right, #00093c, #2d0b00);
     color: #fff;
     padding: 50px 0 30px;
@@ -415,7 +419,7 @@ footer{
 }
 
 .footer__col {
-    flex-basis: 25%;
+    width: 25%;
     padding: 10px;
 }
 
@@ -437,6 +441,11 @@ form {
     list-style: none;
     padding: auto;
     cursor: pointer;
+}
+
+.footer__col-about a, .footer__col-social-mxh a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .footer__col-connect{
@@ -529,9 +538,14 @@ form button .fas{
         grid-template-columns: 50% 50%;
     }
 
+    .box-right{
+        top: 0;
+        width: 80%;
+    }
+
     /* footer */
     footer{
-        bottom: -862px;
+        margin-top: 15%;
     }
 }
 
@@ -616,7 +630,9 @@ form button .fas{
     }
 
     .search:hover .input, .search .input:valid{
+        font-size: 13px;
         width: 200px;
+        padding: 10px 15px;
     }
 
     .search .btn{
@@ -633,7 +649,7 @@ form button .fas{
 
     /* main */
     main{
-        grid-template-columns: auto 200px;
+        grid-template-columns: auto;
     }
 
     .box .title1,
@@ -643,7 +659,6 @@ form button .fas{
     /* box-left */
     .wrapper{
         padding: 10px;
-        grid-template-columns: 50% 50%;
     }
 
     .wrapper .wrapper-child{
@@ -665,46 +680,14 @@ form button .fas{
     }
     /* box-right */
     .box-right{
-        margin-left: 12%;
-    }
-
-    .box-right .follow{
-        padding: 5px;
-    }
-
-    .box-right .follow h2{
-        font-size: 15px;
-    }
-
-    .box-right .social .icon,
-    .box-right .social{
-        font-size: 10px;
-        padding: 4px;
-    }
-
-    .box-right .social .icon{
-        margin-right: 5px;
-    }
-
-    .box-right .ins-icon{
-        left: 0;
-    }
-
-    .box-right .hashtag{
-        margin: 30px 15px 20px;
-        padding: 5px;
-    }
-
-    .box-right .hashtag .title{
-        padding: 0 0 10px;
-        font-size: 18px;
+        display: none;
     }
 }
 
 /*responsive-footer*/
 @media(max-width: 767px){
     footer{
-        bottom: -1373px;
+       margin-top: 17%;
     }
 
     .footer__col{
@@ -714,20 +697,15 @@ form button .fas{
   }
   @media(max-width: 574px){
     .wrapper{
-        grid-template-columns: repeat(auto-fit, minmax(140px, auto));
-    }
+        left: 10px;
+    }   
 
     .box-left{
-        width: 70%;
-        margin: auto;
-    }
-
-    .box-right{
-        display: none;
+        width: 90%;
     }
 
     footer{
-        bottom: -1500px;;
+        margin-top: 28%;
     }
 
     .footer__col{
