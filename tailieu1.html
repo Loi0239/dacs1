@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML là gì? Ưu nhược điểm và vai trò của HTML trong lập trình web?</title>
     <link rel="stylesheet" href="./assets/fonts/fontawesome-6.4.0-(icon)/css/all.min.css">
     <link rel="shortcut icon" href="./assets/img/logo-page.png" type="image/x-icon">
     <link rel="stylesheet" href="tailieu/tlcss/tailieu1.css">
+    <link rel="stylesheet" href="assets/bootstrap-5.2.3-dist/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
     <header id="header">
@@ -30,76 +31,59 @@
         <a href="./Form-login-register.html" class="login-btn">Đăng Nhập</a> 
     </header>
 
-    <main>
-        <section class="box-left">
-            <div>
-                <p class="text">Quảng cáo</p>
-            </div>
-        </section>
-        <section class="box-center">
-            <div class="wrapper">
-                <div>
-                    <h1 class="wrapper__head">HTML là gì? Ưu nhược điểm và vai trò của HTML trong lập trình web?</h1>
+    <div class="wrapper">
+        <article>
+            <div class="container bg-white pt-5">
+                <h3 class="pt-3"><b>HTML là gì? Ưu nhược điểm và vai trò của HTML trong lập trình web?</b></h3>
+                <div class="container bg-light">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa-solid fa-user user"></i> Tác giả: Nguyễn Huyền
+                        </div>
+                        <div class="col">
+                            <i class="fa-solid fa-clock"></i> Ngày đăng: 03-06-2023
+                        </div>
+                        <div class="col">
+                            <i class="fa-solid fa-thumbs-up"></i> 707
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img class="wrapper__anh" src="tailieu/img/TaiLieu1/1.jpg" alt="">
-                </div>
-                <div>
-                    <p class="wrapper__text">Có thể nói HTML là một trong những yếu tố quan trọng để bạn xây dựng và hoàn thiện một trang web hoàn chỉnh.
-                         Vậy HTML là gì? Ưu nhược điểm của nó ra sao? 
-                         Hãy cùng Bizfly Cloud tìm hiểu chi tiết hơn về ngôn ngữ này qua bài viết dưới đây nhé!</p>
-                </div>
-                <div>
-                    <h2 class="wrapper__head">HTML là gì?</h2>
-                </div>
-                <div>
-                    <p class="wrapper__text">HTML viết tắt cho Hypertext Markup Language, tạm dịch là ngôn ngữ đánh dấu siêu văn bản.
-                         HTML được sử dụng để tạo và cấu trúc các thành phần trong trang web hoặc ứng dụng, phân chia các đoạn văn, heading, links, blockquotes,… 
-                         HTML không phải là ngôn ngữ lập trình. Điều này có nghĩa là nó không thể tạo ra các chức năng "động". 
-                         Hiểu một cách đơn giản hơn, HTML cũng tương tự như phần mềm Microsoft Word, nó chỉ có tác dụng bố cục và định dạng trang web.</p>
-                </div>
-                <div>
-                    <img src="tailieu/img/TaiLieu1/2.jpg" alt="" class="wrapper__anh">
-                </div>
-                <div>
-                    <p class="wrapper__text">Một tài liệu HTML được hình thành bởi các phần tử HTML (HTML Elements) được quy định bằng các cặp thẻ (tag và attributes).
-                         Các cặp thẻ này được bao bọc bởi một dấu ngoặc nhọn (ví dụ ) và thường là sẽ được khai báo thành một cặp, bao gồm thẻ mở và thẻ đóng. 
-                         Ví dụ, chúng ta có thể tạo một đoạn văn bằng cách đặt văn bản vào trong cặp tag mở đóng văn bản <a>&lt;p&gt;</a> và <a>&lt;/p&gt;</a>: 
-                    </p>
-                </div>
-                <div class="wrapper__khung">
+                <h4 class="pt-2"><b>1. HTML là gì?</b></h4>
+                <p>HTML viết tắt cho Hypertext Markup Language, tạm dịch là ngôn ngữ đánh dấu siêu văn bản.
+                    HTML được sử dụng để tạo và cấu trúc các thành phần trong trang web hoặc ứng dụng, phân chia các đoạn văn, heading, links, blockquotes,… 
+                    HTML không phải là ngôn ngữ lập trình. Điều này có nghĩa là nó không thể tạo ra các chức năng "động". 
+                    Hiểu một cách đơn giản hơn, HTML cũng tương tự như phần mềm Microsoft Word, nó chỉ có tác dụng bố cục và định dạng trang web.
+                </p>
+                <img src="tailieu/img/TaiLieu1/2.jpg" alt="" class="img fluid w-100">
+                <p>Một tài liệu HTML được hình thành bởi các phần tử HTML (HTML Elements) được quy định bằng các cặp thẻ (tag và attributes).
+                    Các cặp thẻ này được bao bọc bởi một dấu ngoặc nhọn (ví dụ ) và thường là sẽ được khai báo thành một cặp, bao gồm thẻ mở và thẻ đóng. 
+                    Ví dụ, chúng ta có thể tạo một đoạn văn bằng cách đặt văn bản vào trong cặp tag mở đóng văn bản <a>&lt;p&gt;</a> và <a>&lt;/p&gt;</a>: 
+                </p>
+                <div class="wrapper__khung pt-3">
                     <p class="wrapper__khung-text1">Đây là cách bạn thêm đoạn văn trong HTML.</p>
                     <p class="wrapper__khung-text2">Bạn có thể thêm nhiều đoạn văn!</p>
                 </div>
-                <div>
-                    <p class="wrapper__text">Mỗi trang thường sẽ chứa một tập hợp kết nối đến các trang khác, các kết nối này được gọi là siêu liên kết. 
-                        Mỗi trang web bạn thấy trên Internet sẽ sử dụng một phiên bản mã HTML này hoặc một phiên bản HTML khác.</p>
-                </div>
-                <div>
-                    <p class="wrapper__text">Một số thuật ngữ HTML thường gặp để bạn sử dụng nó dễ dàng và thuận tiện hơn:</p>
-                </div>
-                <div>
-                        <ul>
-                            <li class="wrapper__text-li"><b>Elements</b>: Là các chỉ định xác định nội dung, cấu trúc của các đối tượng trong một Website. 
-                                Tên Element được bao quang, xác định bằng dấu ngoặc <a>&lt;&gt;</a>. 
-                                Những yếu tố được sử dụng phổ biến là đoạn văn <a>&lt;p&gt;</a>,các cấp độ tiêu đề (từ <a>&lt;h1&gt;</a> đến <a>&lt;h6&gt;</a>), danh sách tiếp tục bao gồm <a>&lt;a&gt;</a>,<a>&lt;div&gt;</a>,<a>&lt;span&gt;</a>,<a>&lt;strong&gt;</a>,…</li>
-                            
-                                <li class="wrapper__text-li"><b>Tags</b>: Một Element được bao quanh bởi các dấu ngoặc <a>&lt;&gt;</a> sẽ tạo ra các thẻ. 
-                                    Ví dụ thẻ mở là dấu hiệu cho bạn biết sự bắt đầu của một Element (ví dụ: <a>&lt;div&gt;</a>). 
-                                    Thẻ đóng sẽ đánh dấu vào cuối của một Element, có hình thức là dấu ngoặc nhỏ + dấu chéo + dấu ngoặc lớn (ví dụ: <a>&lt;div&gt;</a>). 
-                                    Ở giữa thẻ mở và thẻ đóng là nội dung của Element.
-                                </li>
-                                <li class="wrapper__text-li"><b>Attributes</b>: Là thuộc tính sử dụng để cung cấp thông tin bổ sung về một Element. 
-                                    Các Attributes bao gồm tên và giá trị, được xác định sau tên của một thành phần và trong thẻ mở. 
-                                    Attributes có định dạng như sau: tên thuộc tính + dấu bằng + giá trị thuộc tính được trích dẫn. 
-                                    Một số thuộc tính mà tôi thường dùng là Attribute Class, ID, SRC, thuộc tính href,…
-                                
-                                </li>
-                        </ul>
-                </div>
-                <div>
-                    <p class="wrapper__text">Để biết bố cục HTML của một trang web như thế nào, mời bạn xem ví dụ code bên dưới:</p>
-                </div>
+                <p>Mỗi trang thường sẽ chứa một tập hợp kết nối đến các trang khác, các kết nối này được gọi là siêu liên kết. 
+                    Mỗi trang web bạn thấy trên Internet sẽ sử dụng một phiên bản mã HTML này hoặc một phiên bản HTML khác.
+                </p>
+                <p>Một số thuật ngữ HTML thường gặp để bạn sử dụng nó dễ dàng và thuận tiện hơn:</p>
+                <ul>
+                        <li><b>Elements</b>: Là các chỉ định xác định nội dung, cấu trúc của các đối tượng trong một Website. 
+                        Tên Element được bao quang, xác định bằng dấu ngoặc <a>&lt;&gt;</a>. 
+                        Những yếu tố được sử dụng phổ biến là đoạn văn <a>&lt;p&gt;</a>,các cấp độ tiêu đề (từ <a>&lt;h1&gt;</a> đến <a>&lt;h6&gt;</a>), danh sách tiếp tục bao gồm <a>&lt;a&gt;</a>,<a>&lt;div&gt;</a>,<a>&lt;span&gt;</a>,<a>&lt;strong&gt;</a>,…</li>
+                    
+                        <li><b>Tags</b>: Một Element được bao quanh bởi các dấu ngoặc <a>&lt;&gt;</a> sẽ tạo ra các thẻ. 
+                            Ví dụ thẻ mở là dấu hiệu cho bạn biết sự bắt đầu của một Element (ví dụ: <a>&lt;div&gt;</a>). 
+                            Thẻ đóng sẽ đánh dấu vào cuối của một Element, có hình thức là dấu ngoặc nhỏ + dấu chéo + dấu ngoặc lớn (ví dụ: <a>&lt;div&gt;</a>). 
+                            Ở giữa thẻ mở và thẻ đóng là nội dung của Element.
+                        </li>
+                        <li><b>Attributes</b>: Là thuộc tính sử dụng để cung cấp thông tin bổ sung về một Element. 
+                            Các Attributes bao gồm tên và giá trị, được xác định sau tên của một thành phần và trong thẻ mở. 
+                            Attributes có định dạng như sau: tên thuộc tính + dấu bằng + giá trị thuộc tính được trích dẫn. 
+                            Một số thuộc tính mà tôi thường dùng là Attribute Class, ID, SRC, thuộc tính href,…
+                        </li>
+                </ul>
+                <p>Để biết bố cục HTML của một trang web như thế nào, mời bạn xem ví dụ code bên dưới:</p>
                 <div class="wrapper__khung1">
                     <p class="wrapper__k1">
                         <a>&lt;!DOCTYPE html&gt;</a>
@@ -123,303 +107,189 @@
                     <p class="wrapper__k1"><a>&lt;/body&gt;</a></p>
                     <p class="wrapper__k1"><a>&lt;/html&gt;</a></p>
                 </div>
-                <div>
-                    <p class="wrapper__text">Trong đó:</p>
-                </div>
-                <div>
-                    <ul>
-                        <li class="wrapper__text-li">
-                            <b><a>&lt;!DOCTYPE html&gt;</a></b>: khai báo kiểu dữ liệu hiển thị
-                        </li>
-                        <li class="wrapper__text-li">
-                            <b>
-                                <a>&lt;html&gt;</a> và <a>&lt;/html&gt;</a>
-                            </b>: cặp thẻ bắt buộc, element cấp cao nhất, có nhiệm vụ đóng gói tất cả nội dung của trang HTML
-                        </li>
-                        <li class="wrapper__text-li">
-                            <b>
-                                <a>&lt;head&gt;</a> và <a>&lt;/head&gt;</a>
-                            </b>: khai báo các thông tin meta của trang web như: tiêu đề trang, charset
-                        </li>
-                        <li class="wrapper__text-li">
-                            <b>
-                                <a>&lt;title&gt;</a> và <a>&lt;/title&gt;</a>
-                            </b>: cặp thẻ nằm bên trong thẻ <head>, dùng để khai báo tiêu đề của trang
-                        </li>
-                        <li class="wrapper__text-li">
-                            <b>
-                                <a>&lt;body&gt;</a> và <a>&lt;/body&gt;</a>
-                            </b>: cặp thẻ dùng để đóng gói tất cả các nội dung sẽ hiển thị trên trang
-                        </li>
-                        <li class="wrapper__text-li">
-                            <b>
-                                <a>&lt;h1&gt;</a>, <a>&lt;h2&gt;</a>
-                            </b>: định dạng dữ liệu dạng heading. Thông thường có 6 cấp độ heading trong HTML, trải dài từ <a>&lt;h1&gt;</a> đến <a>&lt;h6&gt;</a>. 
-                            Trong đó, <a>&lt;h1&gt;</a> là cấp độ heading cao nhất và <a>&lt;h6&gt;</a> là cấp độ heading thấp nhất.
-                        </li>
-                        <li class="wrapper__text-li">
-                            <b>
-                                <a>&lt;p&gt;</a> và <a>&lt;/p&gt;</a>
-                            </b>: cặp thẻ chứa các đoạn văn bản của trang web
-                        </li>
-                    </ul>
-                </div>
+                <p>Trong đó:</p>
+                <ul>
+                    <li>
+                        <b><a>&lt;!DOCTYPE html&gt;</a></b>: khai báo kiểu dữ liệu hiển thị
+                    </li>
+                    <li>
+                        <b>
+                            <a>&lt;html&gt;</a> và <a>&lt;/html&gt;</a>
+                        </b>: cặp thẻ bắt buộc, element cấp cao nhất, có nhiệm vụ đóng gói tất cả nội dung của trang HTML
+                    </li>
+                    <li>
+                        <b>
+                            <a>&lt;head&gt;</a> và <a>&lt;/head&gt;</a>
+                        </b>: khai báo các thông tin meta của trang web như: tiêu đề trang, charset
+                    </li>
+                    <li>
+                        <b>
+                            <a>&lt;title&gt;</a> và <a>&lt;/title&gt;</a>
+                        </b>: cặp thẻ nằm bên trong thẻ <head>, dùng để khai báo tiêu đề của trang
+                    </li>
+                    <li>
+                        <b>
+                            <a>&lt;body&gt;</a> và <a>&lt;/body&gt;</a>
+                        </b>: cặp thẻ dùng để đóng gói tất cả các nội dung sẽ hiển thị trên trang
+                    </li>
+                    <li>
+                        <b>
+                            <a>&lt;h1&gt;</a>, <a>&lt;h2&gt;</a>
+                        </b>: định dạng dữ liệu dạng heading. Thông thường có 6 cấp độ heading trong HTML, trải dài từ <a>&lt;h1&gt;</a> đến <a>&lt;h6&gt;</a>. 
+                        Trong đó, <a>&lt;h1&gt;</a> là cấp độ heading cao nhất và <a>&lt;h6&gt;</a> là cấp độ heading thấp nhất.
+                    </li>
+                    <li>
+                        <b>
+                            <a>&lt;p&gt;</a> và <a>&lt;/p&gt;</a>
+                        </b>: cặp thẻ chứa các đoạn văn bản của trang web
+                    </li>
+                </ul>
                 <!-- ND2 -->
-                <div>
-                    <h2 class="wrapper__head"><b>2. HTML được phát triển như thế nào?</b></h2>
-                </div>
-                <div>
-                    <p class="wrapper__text">HTML được tạo ra bởi Tim Berners-Lee, một nhà vật lý học của trung tâm nghiên cứu CERN ở Thụy Sĩ.
-                         Anh đã nghĩ ra được ý tưởng cho hệ thống hypertext trên nền Internet. 
-                         Hypertext có nghĩa là văn bản chứa links, nơi người xem có thể truy cập ngay lập tức. 
-                         Nhanh chóng phổ biến ở mức độ chóng mặt, HTML được xem như là chuẩn mật của một website. 
-                         Hiện nay, HTML đã trở thành một chuẩn Internet được tổ chức W3C (World Wide Web Consortium) vận hành và phát triển.
-                         Bạn có thể tự tìm kiếm tình trạng mới nhất của HTML tại bất kỳ thời điểm nào trên Website của W3C.</p>
-                </div>
-                <div>
-                    <img src="tailieu/img/TaiLieu1/3.jpg" alt="" class="wrapper__anh">
-                </div>
-                <div>
-                    <p class="wrapper__text">Phiên bản đầu tiên của HTML xuất hiện năm 1991, gồm 18 tag HTML. 
-                        Phiên bản HTML 4.01 được xuất bản năm 1999. 
-                        Sau đó, các nhà phát triển đã thay thế HTML bằng XHTML vào năm 2000. 
-                        Đến năm 2014, HTML được nâng cấp lên chuẩn HTML5 với nhiều tag được thêm vào markup, mục đích là để xác định rõ nội dung thuộc loại là gì (ví dụ như: <a>&lt;article&gt;</a>,<a>&lt;header&gt;</a>,<a>&lt;footer&gt;</a>...)
-                    </p>
-                </div>
-                <div>
-                    <p class="wrapper__text">
-                        Theo Mozilla Developer Network thì HTML Element Reference hiện nay có khoảng hơn 140 tag. 
-                        Tuy nhiên một vài tag trong số đó đã bị tạm ngưng (do không được hỗ trợ bởi các trình duyệt hiện hành).
-                    </p>
-                </div>
+                <h4><b>2. HTML được phát triển như thế nào?</b></h4>
+                <p>HTML được tạo ra bởi Tim Berners-Lee, một nhà vật lý học của trung tâm nghiên cứu CERN ở Thụy Sĩ.
+                    Anh đã nghĩ ra được ý tưởng cho hệ thống hypertext trên nền Internet. 
+                    Hypertext có nghĩa là văn bản chứa links, nơi người xem có thể truy cập ngay lập tức. 
+                    Nhanh chóng phổ biến ở mức độ chóng mặt, HTML được xem như là chuẩn mật của một website. 
+                    Hiện nay, HTML đã trở thành một chuẩn Internet được tổ chức W3C (World Wide Web Consortium) vận hành và phát triển.
+                    Bạn có thể tự tìm kiếm tình trạng mới nhất của HTML tại bất kỳ thời điểm nào trên Website của W3C.
+                </p>
+                <img src="tailieu/img/TaiLieu1/3.jpg" alt="" class="img fluid w-100">  
+                <p>Phiên bản đầu tiên của HTML xuất hiện năm 1991, gồm 18 tag HTML. 
+                    Phiên bản HTML 4.01 được xuất bản năm 1999. 
+                    Sau đó, các nhà phát triển đã thay thế HTML bằng XHTML vào năm 2000. 
+                    Đến năm 2014, HTML được nâng cấp lên chuẩn HTML5 với nhiều tag được thêm vào markup, mục đích là để xác định rõ nội dung thuộc loại là gì (ví dụ như: <a>&lt;article&gt;</a>,<a>&lt;header&gt;</a>,<a>&lt;footer&gt;</a>...)
+                </p>  
+                <p>
+                    Theo Mozilla Developer Network thì HTML Element Reference hiện nay có khoảng hơn 140 tag. 
+                    Tuy nhiên một vài tag trong số đó đã bị tạm ngưng (do không được hỗ trợ bởi các trình duyệt hiện hành).
+                </p>
                 <!-- ND3 -->
-                <div>
-                    <h2 class="wrapper__head">3. HTML hoạt động như thế nào?</h2>
-                </div>
-                <div>
-                    <p class="wrapper__text">
-                        Thông thường một trang web bao gồm một số trang HTML khác nhau. 
-                        Ví dụ: trang chủ, trang giới thiệu và trang liên hệ đều có các tệp HTML riêng biệt. 
-                        Tài liệu HTML là các tệp kết thúc bằng đuôi .html hoặc .htm. 
-                    </p>
-                </div>
-                <div>
-                    <p class="wrapper__text">
-                        Trình duyệt web đọc tệp HTML và hiển thị nội dung của nó để người dùng internet có thể xem. 
-                        Bạn có thể xem chúng bằng cách sử dụng bất kỳ trình duyệt web nào như Google Chrome, Firefox, Safari,… 
-                        Nhiệm vụ của trình duyệt là đọc những file HTML này và xuất bản nội dung lên Internet sao cho người dùng có thể xem và hiểu được chúng. 
-                    </p>
-                </div>
-                <div>
-                    <img src="tailieu/img/TaiLieu1/4.jpg" alt="" class="wrapper__anh">
-                </div>
-                <div>
-                    <p class="wrapper__text">
-                        Khi bạn gõ ra một tên miền, trình duyệt mà bạn đang sử dụng sẽ kết nối tới một máy chủ web, bằng cách dùng một địa chỉ IP, vốn được thấy bằng cách phân giải tên miền đó (DNS). 
-                        Máy chủ web chính là một máy tính được kết nối tới internet và nhận các yêu cầu tới trang web từ trình duyệt của bạn. 
-                        Máy chủ sau đó sẽ gửi trả thông tin về trình duyệt của bạn, là một tài liệu HTML, để hiển thị trang web.
-                    </p>
-                </div>
-                <div>
-                    <p class="wrapper__text">
-                        Tất cả các trang HTML đều có một loạt các phần tử HTML, bao gồm một tập hợp các thẻ và thuộc tính. 
-                        Các phần tử HTML là các khối xây dựng của một trang web. 
-                        Một thẻ cho trình duyệt web biết vị trí bắt đầu và kết thúc của một phần tử, trong khi một thuộc tính mô tả các đặc điểm của một phần tử.
-                    </p>
-                </div>
-                <div>
-                    <p class="wrapper__text">
-                        <b>Ba phần chính của một phần tử là: </b>
-                    </p>
-                </div>
-                <div>
-                    <ul>
-                        <li class="wrapper__text-li">
-                            + <b>Thẻ mở</b> - được sử dụng để cho biết nơi một phần tử bắt đầu có hiệu lực. 
-                            Thẻ được bọc bằng dấu ngoặc nhọn mở và đóng. 
-                            Ví dụ: sử dụng thẻ bắt đầu <a>&lt;p&gt;</a> để tạo một đoạn văn. 
-                        </li>
-                        <li class="wrapper__text-li">
-                            + <b>Nội dung</b> - đây là đầu ra mà những người dùng khác nhìn thấy. 
-                        </li>
-                        <li class="wrapper__text-li">
-                            + <b>Thẻ đóng</b> - giống như thẻ mở, nhưng có dấu gạch chéo lên trước tên phần tử. 
-                            Ví dụ: <a>&lt;/p&gt;</a>  để kết thúc một đoạn văn. 
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="wrapper__text">Sự kết hợp của ba phần này sẽ tạo ra một phần tử HTML:</p>
-                </div>
+                <h4><b>3. HTML hoạt động như thế nào?</b></h4>
+                <p>Thông thường một trang web bao gồm một số trang HTML khác nhau. 
+                    Ví dụ: trang chủ, trang giới thiệu và trang liên hệ đều có các tệp HTML riêng biệt. 
+                    Tài liệu HTML là các tệp kết thúc bằng đuôi .html hoặc .htm.
+                </p>
+                <p>Trình duyệt web đọc tệp HTML và hiển thị nội dung của nó để người dùng internet có thể xem. 
+                    Bạn có thể xem chúng bằng cách sử dụng bất kỳ trình duyệt web nào như Google Chrome, Firefox, Safari,… 
+                    Nhiệm vụ của trình duyệt là đọc những file HTML này và xuất bản nội dung lên Internet sao cho người dùng có thể xem và hiểu được chúng. 
+                </p>
+                <img src="tailieu/img/TaiLieu1/4.jpg" alt="" class="img fluid w-100">
+                <p>Khi bạn gõ ra một tên miền, trình duyệt mà bạn đang sử dụng sẽ kết nối tới một máy chủ web, bằng cách dùng một địa chỉ IP, vốn được thấy bằng cách phân giải tên miền đó (DNS). 
+                    Máy chủ web chính là một máy tính được kết nối tới internet và nhận các yêu cầu tới trang web từ trình duyệt của bạn. 
+                    Máy chủ sau đó sẽ gửi trả thông tin về trình duyệt của bạn, là một tài liệu HTML, để hiển thị trang web.
+                </p>
+                <p>Tất cả các trang HTML đều có một loạt các phần tử HTML, bao gồm một tập hợp các thẻ và thuộc tính. 
+                    Các phần tử HTML là các khối xây dựng của một trang web. 
+                    Một thẻ cho trình duyệt web biết vị trí bắt đầu và kết thúc của một phần tử, trong khi một thuộc tính mô tả các đặc điểm của một phần tử.
+                </p>
+                <p><b>Ba phần chính của một phần tử là: </b></p>
+                <ul>
+                    <li class="wrapper__text-li">
+                        <b>Thẻ mở</b> - được sử dụng để cho biết nơi một phần tử bắt đầu có hiệu lực. 
+                        Thẻ được bọc bằng dấu ngoặc nhọn mở và đóng. 
+                        Ví dụ: sử dụng thẻ bắt đầu <a>&lt;p&gt;</a> để tạo một đoạn văn. 
+                    </li>
+                    <li class="wrapper__text-li">
+                        <b>Nội dung</b> - đây là đầu ra mà những người dùng khác nhìn thấy. 
+                    </li>
+                    <li class="wrapper__text-li">
+                        <b>Thẻ đóng</b> - giống như thẻ mở, nhưng có dấu gạch chéo lên trước tên phần tử. 
+                        Ví dụ: <a>&lt;/p&gt;</a>  để kết thúc một đoạn văn. 
+                    </li>
+                </ul>
+                <p>Sự kết hợp của ba phần này sẽ tạo ra một phần tử HTML:</p>
                 <div class="wrapper__khung">
                     <p class="wrapper__khung-text1">
                         <a>&lt;p&gt;</a>Đây là cách bạn thêm một đoạn trong HTML.<a>&lt;/p&gt;</a>
                     </p>
                 </div>
-                <div>
-                    <p class="wrapper__text">
-                        Một phần quan trọng khác của HTML element là thuộc tính (attribute) của nó, có hai phần - tên và giá trị thuộc tính. 
+                <p>
+                    Một phần quan trọng khác của HTML element là thuộc tính (attribute) của nó, có hai phần - tên và giá trị thuộc tính. 
                         Tên xác định thông tin bổ sung mà người dùng muốn thêm, trong khi giá trị thuộc tính cung cấp thêm thông số kỹ thuật.
-                    </p>
-                </div>
-                <div>
-                    <p class="wrapper__text">
-                        Ví dụ: một phần tử kiểu thêm màu tím và verdana font-family sẽ trông như thế này:
-                    </p>
-                </div>
+                </p>
+                <p>Ví dụ: một phần tử kiểu thêm màu tím và verdana font-family sẽ trông như thế này:</p>
                 <div class="wrapper__khung">
                     <p class="wrapper__khung-text1">
                         <a>&lt;p style = "color: Purple; font-family: verdana"&gt;</a>Đây là cách bạn thêm một đoạn trong HTML.<a>&lt;/p&gt;</a>
                     </p>
                 </div>
-                <div>
-                    <p class="wrapper__text">
-                        Hầu hết các phần tử đều có thẻ mở và thẻ đóng, nhưng một số phần tử không cần thẻ đóng để hoạt động, chẳng hạn như các phần tử trống. 
-                        Các phần tử này không sử dụng thẻ kết thúc vì chúng không có nội dung:
-                    </p>
-                </div>
+                <p>Hầu hết các phần tử đều có thẻ mở và thẻ đóng, nhưng một số phần tử không cần thẻ đóng để hoạt động, chẳng hạn như các phần tử trống. 
+                    Các phần tử này không sử dụng thẻ kết thúc vì chúng không có nội dung:
+                </p>
                 <div class="wrapper__khung">
                     <p class="wrapper__khung-text1">
                         <a>&lt;img src = "/" alt = "Hình ảnh"&gt;</a>
                     </p>
                 </div>
-                <div>
-                    <p class="wrapper__text">
-                        Thẻ hình ảnh này có hai thuộc tính - thuộc tính src, đường dẫn hình ảnh và thuộc tính alt, văn bản mô tả. 
-                        Tuy nhiên, nó không có nội dung cũng như thẻ kết thúc. 
-                    </p>
-                </div>
-                <div>
-                    <p class="wrapper__text">
-                        Cuối cùng, mọi tài liệu HTML phải bắt đầu bằng khai báo <! DOCTYPE> để thông báo cho trình duyệt web về loại tài liệu. 
-                        Với HTML5, khai báo công khai HTML kiểu tài liệu sẽ là:
-                    </p>
-                </div>
+                <p>Thẻ hình ảnh này có hai thuộc tính - thuộc tính src, đường dẫn hình ảnh và thuộc tính alt, văn bản mô tả. 
+                    Tuy nhiên, nó không có nội dung cũng như thẻ kết thúc.
+                </p>
+                <p> Cuối cùng, mọi tài liệu HTML phải bắt đầu bằng khai báo <! DOCTYPE> để thông báo cho trình duyệt web về loại tài liệu. 
+                    Với HTML5, khai báo công khai HTML kiểu tài liệu sẽ là:
+                </p>
                 <div class="wrapper__khung">
                     <p class="wrapper__khung-text1">
                         <a>&lt; ! DOCTYPE html&gt;</a>
                     </p>
                 </div>
                 <!-- ND4 -->
-                <div>
-                    <h2 class="wrapper__head"><b>4. Ưu, nhược điểm của HTML:</b></h2>
-                </div>
-                <div>
-                    <p class="wrapper__text">HTML có rất nhiều ưu điểm đối với người dùng, song vẫn tồn tại một số nhược điểm nhất định.</p>
-                </div>
-                <div>
-                    <h3 class="wrapper__text">Ưu điểm:</h3>
-                </div>
-                <div>
-                    <ul>
-                        <li class="wrapper__text-li">+ Ngôn ngữ này được sử dụng rộng rãi với rất nhiều nguồn tài nguyên hỗ trợ cùng một cộng đồng sử dụng vô cùng lớn đằng sau nó.</li>
-                        <li class="wrapper__text-li">+ Có thể hoạt động mượt mà trên hầu hết mọi trình duyệt hiện hành.</li>
-                        <li class="wrapper__text-li">+ Quá trình học HTML khá đơn giản.</li>
-                        <li class="wrapper__text-li">+ Mã nguồn mở và hoàn toàn miễn phí.</li>
-                        <li class="wrapper__text-li">+ Các Markup sử dụng trong HTML thường ngắn gọn và đồng nhất.</li>
-                        <li class="wrapper__text-li">+ Chuẩn chính của web được vận hành bởi World Wide Web Consortium (W3C).</li>
-                        <li class="wrapper__text-li">+ Dễ dàng tích hợp với các ngôn ngữ backend như PHP, Node.js,...</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="wrapper__text">Nhược điểm:</h3>
-                </div>
-                <div>
-                    <ul>
-                        <li class="wrapper__text-li">+ Ngôn ngữ này chỉ được áp dụng chủ yếu cho trang web tĩnh. 
-                            Đối với các tính năng động, bạn cần sử dụng JavaScript hoặc ngôn ngữ backend bên thứ 3 ví dụ như PHP.</li>
-                        <li class="wrapper__text-li">+ Người dùng phải tạo các trang web riêng lẻ cho HTML, ngay cả khi các phần tử giống nhau.</li>
-                        <li class="wrapper__text-li">+ Một số trình duyệt chấp nhận các tính năng mới một cách chậm chạp. 
-                            Đôi khi các trình duyệt cũ hơn không phải lúc nào cũng hiển thị các thẻ mới hơn.</li>
-                    </ul>
-                </div>
+                <h4><b>4. Ưu, nhược điểm của HTML:</b></h4>
+                <p>HTML có rất nhiều ưu điểm đối với người dùng, song vẫn tồn tại một số nhược điểm nhất định.</p>
+                <p><b>Ưu điểm:</b></p>
+                <ul>
+                    <li class="wrapper__text-li">Ngôn ngữ này được sử dụng rộng rãi với rất nhiều nguồn tài nguyên hỗ trợ cùng một cộng đồng sử dụng vô cùng lớn đằng sau nó.</li>
+                    <li class="wrapper__text-li">Có thể hoạt động mượt mà trên hầu hết mọi trình duyệt hiện hành.</li>
+                    <li class="wrapper__text-li">Quá trình học HTML khá đơn giản.</li>
+                    <li class="wrapper__text-li">Mã nguồn mở và hoàn toàn miễn phí.</li>
+                    <li class="wrapper__text-li">Các Markup sử dụng trong HTML thường ngắn gọn và đồng nhất.</li>
+                    <li class="wrapper__text-li">Chuẩn chính của web được vận hành bởi World Wide Web Consortium (W3C).</li>
+                    <li class="wrapper__text-li">Dễ dàng tích hợp với các ngôn ngữ backend như PHP, Node.js,...</li>
+                </ul>
+                <p><b>Nhược điểm:</b></p>
+                <ul>
+                    <li class="wrapper__text-li">Ngôn ngữ này chỉ được áp dụng chủ yếu cho trang web tĩnh. 
+                        Đối với các tính năng động, bạn cần sử dụng JavaScript hoặc ngôn ngữ backend bên thứ 3 ví dụ như PHP.</li>
+                    <li class="wrapper__text-li">Người dùng phải tạo các trang web riêng lẻ cho HTML, ngay cả khi các phần tử giống nhau.</li>
+                    <li class="wrapper__text-li">Một số trình duyệt chấp nhận các tính năng mới một cách chậm chạp. 
+                        Đôi khi các trình duyệt cũ hơn không phải lúc nào cũng hiển thị các thẻ mới hơn.</li>
+                </ul>
                 <!-- ND5 -->
-                <div>
-                    <h2 class="wrapper__head"><b>5. HTML quan trọng như thế nào trong website?</b></h2>
-                </div>
-                <div>
-                    <p class="wrapper__text">
-                        HTML là nền tảng của các trang web, được sử dụng để phát triển trang web bằng cách cấu trúc các trang web và ứng dụng web. 
-                        Nó giúp cấu thành các cấu trúc cơ bản của một website, làm cho trang web trở thành một hệ thống hoàn chỉnh. 
-                    </p>
-                </div>
-                <div>
-                    <p class="wrapper__text">
-                        Mọi trang web bạn mở trong trình duyệt web của mình, từ mạng xã hội đến website âm nhạc, đều sử dụng HTML. 
+                <h4><b>5. HTML quan trọng như thế nào trong website?</b></h4>
+                <p>HTML là nền tảng của các trang web, được sử dụng để phát triển trang web bằng cách cấu trúc các trang web và ứng dụng web. 
+                    Nó giúp cấu thành các cấu trúc cơ bản của một website, làm cho trang web trở thành một hệ thống hoàn chỉnh. 
+                </p>
+                <p>
+                    Mọi trang web bạn mở trong trình duyệt web của mình, từ mạng xã hội đến website âm nhạc, đều sử dụng HTML. 
                         Dù website thuộc thể loại nào, giao tiếp với ngôn ngữ lập trình nào để xử lý dữ liệu thì vẫn phải cần HTML để hiển thị nội dung ra cho người dùng xem. Cụ thể, ngôn ngữ đánh dấu siêu văn bản này giúp bố cục, chia khung sườn các thành phần trang web. 
                         Đồng thời, nó còn hỗ trợ khai báo các File kỹ thuật số như nhạc, video, hình ảnh,…
-                    </p>
-                </div>
-                <div>
-                    <img src="tailieu/img/TaiLieu1/5.jpg" alt="" class="wrapper__anh">
-                </div>
-                <div>
-                    <p class="wrapper__text">
-                        Hy vọng rằng với những chia sẻ trên đây của Bizfly Cloud, bạn đã hiểu thêm về HTML cũng như vai trò của nó trong lập trình web. 
-                        Hãy theo dõi các bài viết tiếp theo của chúng tôi để cập nhật thêm nhiều thông tin hữu ích mỗi ngày nhé!
-                    </p>
-                </div>
+                </p>
+                <img src="tailieu/img/TaiLieu1/5.jpg" alt="" class="img fluid w-100">
+                <p class="pb-4">
+                    Hy vọng rằng với những chia sẻ trên đây, bạn đã hiểu thêm về HTML cũng như vai trò của nó trong lập trình web. 
+                    Hãy theo dõi các bài viết tiếp theo của chúng tôi để cập nhật thêm nhiều thông tin hữu ích mỗi ngày nhé!
+                </p>
             </div>
-        </section>
-        
-        <section class="box-right">
-            <div class="follow">
-                <h2>Theo dõi chúng tôi tại</h2>
-                <a href="https://www.facebook.com/" class="social fb">
-                    <i class="fa-brands fa-facebook icon" 
-                    style="position: relative; top: 0; left: 0"></i> 
-                    Facebook
-                </a>
-                <a href="https://www.youtube.com/" class="social yt">
-                    <i class="fa-brands fa-youtube icon"
-                    style="position: relative; top: 0; left: -3px"></i> 
-                    Youtube
-                </a>
-                <a href="https://www.tiktok.com/" class="social tik">
-                    <i class="fa-brands fa-tiktok icon"
-                    style="position: relative; top: 0; left: -9px"></i> 
-                    Tiktok
-                </a>
-                <a href="https://www.instagram.com/" class="social ins">
-                    <i class="fa-brands fa-instagram icon"
-                    style="position: relative; top: 0; left: 6px"></i> 
-                    Instagram
-                </a>
-            </div>
-
-            <div class="hashtag">
-                <h2 class="title">#Hashtag</h2>
-                <div class="box-hashtag">
-                    <ul class="list-hashtag">
-                        <li><a href="#">#css</a></li>
-                        <li><a href="#">#hoc-lap-trinh</a></li>
-                        <li><a href="#">#html</a></li>
-                        <li><a href="#">#lap-trinh-web</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
-     <!-- Footer -->
-     <footer class="footer">
+        </article>
+        <!-- Footer -->
+    <footer class="footer">
         <div class="footer__row">
             
             <div class="footer__col">
                 <h3>Về chúng tôi</h3>
                     <ul class="footer__col-about">
-                        <li class="footer__col-item"><a href=""></a>Trang chủ</li>
-                        <li class="footer__col-item"><a href=""></a>Tài liệu</li>
-                        <li class="footer__col-item"><a href=""></a>Giới thiệu</li>
+                        <li class="footer__col-item"><a href="./index.html">Trang chủ</a></li>
+                        <li class="footer__col-item"><a href="./document.html">Tài liệu</a></li>
+                        <li class="footer__col-item"><a href="./introduce.html">Giới thiệu</a></li>
                     </ul>
                 
             </div>
             <div class="footer__col">
                 <h3>Theo dõi chúng tôi</h3>
                     <ul class="footer__col-social-mxh">
-                        <li class="footer__col-item"><a href=""><i class="fa-brands fa-facebook"></i></a>  Facebook</li>
-                        <li class="footer__col-item"><a href=""><i class="fa-brands fa-instagram"></i></a>  Instagram</li>
-                        <li class="footer__col-item"><a href=""><i class="fa-brands fa-youtube"></i></a>Youtube</li>
-                        <li class="footer__col-item"><a href=""><i class="fa-brands fa-tiktok"></i></a>  Tiktok</li>
+                        <li class="footer__col-item"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>  Facebook</a></li>
+                        <li class="footer__col-item"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>  Instagram</a></li>
+                        <li class="footer__col-item"><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i>  Youtube</a></li>
+                        <li class="footer__col-item"><a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i>  Tiktok</a></li>
                     </ul>
                 
             </div>
@@ -445,6 +315,6 @@
                 <p class="footer__p">&copy 2023 Blog. All Rights Reserved.</p>
             </div>
     </footer>
-
+    </div>
 </body>
 </html>
