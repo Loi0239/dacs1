@@ -78,7 +78,7 @@ body{
     background-color: #ccc;
     border: none;
     outline: none;
-    padding: 15px 15px;
+    padding: 9px 15px;
     cursor: pointer;
     border-radius: 50%;
 }
@@ -468,7 +468,7 @@ form button .fas{
     }
 
     .search .btn{
-        padding: 6px;
+        padding: 2px;
     }
 
     /* header > buttonLogin */
